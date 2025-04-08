@@ -19,7 +19,7 @@ Follow these steps to run the project locally:
 
 ```bash
  Step 1: Install required packages (make sure Python is installed)
-pip install flask pandas matplotlib
+     pip install flask pandas matplotlib
 
  Step 2: Run the application
 python app.py
