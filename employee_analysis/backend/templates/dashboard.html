@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Analysis Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Employee Performance & Salary Analysis</h1>
+    </header>
+
+    <section class="stats-section">
+        <h2>Key Statistics</h2>
+        <ul>
+            <li><strong>Average Salary:</strong> {{ stats["Average Salary"] }}</li>
+            <li><strong>Highest Paid Employee:</strong> {{ stats["Highest Paid Employee"] }}</li>
+            <li><strong>Top Performer:</strong> {{ stats["Top Performer"] }}</li>
+        </ul>
+    </section>
+
+    <section class="chart-section">
+        <h2>Salary Trend by Experience</h2>
+        <img src="{{ url_for('static', filename='chart.png') }}" alt="Salary Trend Graph">
+    </section>
+
+    <section class="data-section">
+        <h3>Salary Analysis</h3>
+        <div class="table-container">
+            {{ summary_table | safe }}
+        </div>
+
+        <h3>Employee Data</h3>
+        <div class="table-container">
+            {{ employee | safe }}
+        </div>
+    </section>
+    
+    <div class="button-container">
+        <a href="{{ url_for('index') }}" class="button">Back to Home</a>
+    </div>
+</body>
+</html>

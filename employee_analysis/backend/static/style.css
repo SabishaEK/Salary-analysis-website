@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #632f54;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Upload Section */
+.upload-section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.upload-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.upload-section .button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.upload-section .button:hover {
+    background-color: #218838;
+}
+
+/* Statistics Section */
+.stats-section, .chart-section, .data-section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.stats-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.stats-section li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Chart Section */
+.chart-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.styled-table th {
+    background-color: #2a0725;
+    color: white;
+}
+
+/* Button Styling */
+.button-container {
+    margin: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #55384c;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #4b1936;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .upload-section, .stats-section, .chart-section, .data-section {
+        width: 90%;
+    }
+}

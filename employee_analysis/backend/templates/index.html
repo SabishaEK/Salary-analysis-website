@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Analysis Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Employee Performance & Salary Analysis</h1>
+    </header>
+
+    <section class="upload-section">
+        <h2>Upload Employee Data</h2>
+        <form action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+            <button type="submit" class="button">Upload & Analyze</button>
+        </form>
+    </section>
+
+    <section class="info-section">
+        <p>Upload a CSV file containing employee details (Name, Department, Performance, Salary, Experience) to generate analysis.</p>
+    </section>
+
+    
+</body>
+</html>
